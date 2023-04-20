@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <i class="fas fa-key fa-6x"></i>
+    <h1 class="display-3">UserList!</h1>
+    <hr />
+    <% users.forEach(user => { %>
+    <p class="secret-text">
+        <img src="<%=user.profilePic %>" />Username: <%= user.username %> | Email address: <%= user.email %></p> 
+       <%});%>
+
+    </p>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
